@@ -1,11 +1,20 @@
+import gsap from 'gsap';
+import { ScrollTrigger, SplitText } from 'gsap/all'
 import React from 'react'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
+  
+
   return (
-    <div className='bg-red-600'>
-      HEllo
-      
-    </div>
+    <main>
+      <Navbar />
+      <Hero />
+      <div className='min-h-screen bg-black'></div>
+    </main>
   )
 }
 
